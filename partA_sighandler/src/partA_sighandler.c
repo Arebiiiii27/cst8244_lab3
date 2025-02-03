@@ -1,7 +1,6 @@
+#include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
-int main(void) {
-	puts("Hello World!!!"); /* prints Hello World!!! */
-	return EXIT_SUCCESS;
-}
+volatile sig_atomic_t usr1Happened = 0; // Initialize to false (0)

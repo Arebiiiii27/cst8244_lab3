@@ -1,7 +1,13 @@
-21:52:13 **** Build of configuration x86_64-debug for project partA_sighandler ****
+22:55:27 **** Incremental Build of configuration x86_64-debug for project partA_sighandler ****
 make -j8 all 
 qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/partA_sighandler.d,-MT,build/x86_64-debug/src/partA_sighandler.o -o build/x86_64-debug/src/partA_sighandler.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/partA_sighandler.c
 qcc -Vgcc_ntox86_64 -o build/x86_64-debug/partA_sighandler   build/x86_64-debug/src/partA_sighandler.o  
+C:\Users\ACER\qnx710\host\win64\x86_64\usr\bin\x86_64-pc-nto-qnx7.1.0-ld: C:/Users/ACER/qnx710/target/qnx7/x86_64/lib/crt1.o: in function `_start':
+Makefile:60: recipe for target 'build/x86_64-debug/partA_sighandler' failed
+/builds/workspace/QOS224-SDP/build_x86_64/lib/c/startup/x86_64/crt1.S:88: undefined reference to `main'
+cc: C:/Users/ACER/qnx710/host/win64/x86_64/usr/bin/x86_64-pc-nto-qnx7.1.0-ld caught signal 1
+make: *** [build/x86_64-debug/partA_sighandler] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
 
-21:52:15 Build Finished. 0 errors, 0 warnings. (took 2s.3ms)
+22:55:27 Build Failed. 4 errors, 1 warnings. (took 253ms)
 
